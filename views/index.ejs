@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs') %>
+        <main> 
+            <figure class="top-image overlay-container">
+                <img class="overlay-image" src="img/frontend.jpg" alt="Image of Iceberg and man in boat">
+                <div class="overlay-text">
+                    Source: 
+                    <span class="tooltip">
+                    <a href="https://www.designquote.net/wp/back-end-versus-front-end-great-ui/">
+                        Back End vs Front End The double-edged sword of great UI
+                    </a>
+                    <%- include('partials/tooltip.ejs') %>
+                </div>
+            </figure>
+            
+            <div class="blurb">
+               <p>Front end development is all about what the user sees. 
+               Front end programming is broken down into three areas: the content, the style, and the behaviour. 
+               This separation of style and behaviour from content allows for: 
+               </p>
+                   <ul>
+                       <li><strong>Efficient Code</strong>: as the style and behaviour code can be reused across multliple html pages</li>
+                       <li><strong>Easier maintenance</strong>: as the style and behaviour code is all in one place and not duplicated</li>
+                       <li><strong>Better search engine results</strong>: as web crawlers can better identify the content of your page </li>
+                   </ul>
+                <p>To read about more benefits of this division, see this article on 
+                    <span class="tooltip">
+                    <a href="https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript">
+                       The web standards model - HTML, CSS, and JavaScript.
+                    </a>
+                    <%- include('partials/tooltip.ejs') %>
+                </p>
+               <p>
+                The content on a site is defined using HTML,
+                while the style is defined using CSS, and
+                the behaviour of the webpage is defined using JavaScript.
+                Click on one of the logos below to learn more about HTML, CSS, and JavaScript.
+               </p>
+            
+           </div>
+           
+           
+<%- include('partials/footer.ejs') %>

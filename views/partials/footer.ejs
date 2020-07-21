@@ -1,0 +1,43 @@
+           <!-- Figure with image links -->
+           <figure>
+                <table>
+                    <tr>
+                        <td>
+                            <span class="tooltip">
+                            <a href="/html"><img src="/img/html5.svg" alt="HTML5 logo" height="200"></a>
+                            <%- include('../partials/tooltip.ejs') %>
+                        </td>
+                        <td>
+                            <span class="tooltip">
+                            <a href="/css"><img src="/img/css-5.svg" alt="CSS3 logo" height="200"></a>
+                            <%- include('../partials/tooltip.ejs') %>
+                        </td>
+                        <td>
+                            <span class="tooltip">
+                            <a href="/javascript"><img src="/img/javascript-4.svg" alt="JavaScript logo" height="200"></a>
+                            <%- include('../partials/tooltip.ejs') %>
+                        </td>
+                    </tr>
+                </table>
+            </figure> 
+           
+           <!-- Quote at bottom of page -->
+           <br/><br/>
+           <div>
+           <em>"Design is where science and art break even."</em><br/>
+           - Robin Mathew
+           </div>
+           
+        </main>
+        <footer>
+            <!-- Page last updated -->
+            Page Last Update: <%= fakeDate.toDateString() %>
+            <!-- Disclaimer -->
+            <hr>
+            <figure><img src="/img/csumb_logo.png" alt="CSUMB Logo"></figure>
+            CST336 Internet Programming. 2020&copy; Hicks <br />
+            <strong>Disclaimer:</strong> The information in this webpage may not be accurate. <br>
+            It is used for academic purposes only.
+        </footer>
+    </body>
+</html>

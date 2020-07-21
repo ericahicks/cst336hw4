@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+        <main> 
+            <figure class="top-image overlay-container tall-img">
+                <img class="overlay-image" src="img/js.jpg" alt="Image of woman on ladder building website">
+                <div class="overlay-text">
+                    Source: 
+                    <span class="tooltip">
+                    <a href="https://bootcamp.du.edu/blog/top-javascript-frameworks-for-front-end-developers-to-learn-in-2019/">
+                        Top JavaScript Frameworks for Front-End Developers to Learn in 2019
+                    </a>
+                    <%- include('partials/tooltip.ejs') %>
+                </div>
+            </figure>
+            
+            <div class="blurb">
+               <p> 
+               Javascript adds dynamic behaviour to a webpage like buttons and forms. It is a full fledged programming language
+               (as compared to HTML and CSS) and allows for both procedural programming and object oriented programming using object prototypes.
+               Other interesting features of JavaScript are the use of closures to keep variables private. 
+               </p>
+               <p>There are many JavaScript frameworks available that make web programming easier. For example, 
+               </p>
+               <ul>
+                   <li><strong>jQuery</strong> is a JavaScript library used for easier access of DOM elements within the HTML page</li>
+                   <li><strong>AngluarJS</strong> is and open source JavaScript framework that helps create web applications with 
+                       dynamic HTML with pages whose contents are determined at runtime instead of in a static html file like this one.</li>
+                   <li><strong>React.js</strong> is another JavaScript framework, but unlike AngularJS which is open source,
+                       it is maintained by facebook.</li>
+               </ul>
+               To learn more about these JavaScript frameworks and others available, see GeeksForGeeks article on 
+               <span class="tooltip">
+                <a href="https://www.geeksforgeeks.org/frontend-vs-backend/">
+                   Frontend versus Backend
+                </a>
+                <%- include('partials/tooltip.ejs') %>
+                . For more general information on JavaScript and common security issues, start by reading this 
+                <span class="tooltip">
+                <a href="https://en.wikipedia.org/wiki/JavaScript">wikipedia article</a>
+                <%- include('partials/tooltip.ejs') %>.
+               
+           </div>
+
+<%- include('partials/footer.ejs') %>

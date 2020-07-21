@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs') %>
+        <main> 
+            <figure class="top-image overlay-container tall-img">
+                <img class="overlay-image" src="/img/css-layouts.jpg" alt="Website Layout on a Laptop vs Phone">
+                <div class="overlay-text">
+                    Source: 
+                    
+                    <span class="tooltip">
+                    <a href="https://www.freecodecamp.org/news/css-example-css3/">
+                        The Best CSS Examples and CSS3 Examples
+                    </a>
+                    <%- include('partials/tooltip.ejs') %>
+                </div>
+            </figure>
+            
+            <div class="blurb">
+               <p>Front end development is all about what the user sees. A well designed front end will be 
+               both easy to navigate and styled in a way that emphasizes rather than distracts from the main contact.
+               Styling can be accomplished efficiently using CSS which are Cascading Style Sheets composed of 
+               style rules. 
+               </p>
+               
+               <pre><code>Example CSS Style Rule: 
+  h1 {
+      background-color: #eee;
+  }</code></pre>
+               
+               Each style starts with a selector that specifies what elements on the HTML page 
+               to style. Inside each style, style declarations contain attributes and values to change properties
+               such as size, position, color, and more. Style rules are applied in the order in which they are defined
+               in the stylesheet. Nested elements on the page inherit styles from their parent. 
+               
+               A useful feature of CSS is CSS variables also known as custom properties. For example, rather than defining
+               color values repeatedly throughout the stylesheet, a reusable variable can be set using <code>--var-name: value;</code>
+               and can be retrieved using <code>var(--var-name)</code>. However, it is important to note the scope in which the variable 
+               is defined. Whatever style rule the variable is defined under, only the style rule's selected elements and their
+               descendents can access the variable.
+               
+               <pre><code>Example CSS Style Rules with Variable: 
+  body {
+      --main-gray-color: #eee;
+      background-color: white;
+  }
+  h1 {
+      background-color: var(--main-gray-color);
+  }</code></pre>
+               <p>To learn more about CSS variables see the MDN guide on 
+               <span class="tooltip">
+               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">
+                   Using CSS custom properties
+               </a>
+               <%- include('partials/tooltip.ejs') %>.</p>
+           </div>
+               
+          
+<%- include('partials/footer.ejs') %>

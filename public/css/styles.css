@@ -1,0 +1,168 @@
+body {
+    /* Defining color variables to use on page */
+    --dark-blue-color: rgb(9,50,84);
+    --medium-blue-color: rgb(40,149,208);
+    --light-blue-color: rgb(151,215,243);
+    background-color: var(--medium-blue-color);
+    font-family: Tahoma, Geneva, sans-serif;
+}
+header, main, nav, footer {
+    text-align: center;
+}
+header {
+    color: #fff;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+main {
+    background-color: #fff;
+    margin: 0 10%;
+    padding: 2em 0;
+}
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration:none; /* removes underline */
+    color: white; /* by default, links are blue */
+}
+nav a:hover { /* pseudo class */
+    border-bottom:2px var(--light-blue-color) solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */
+    color: var(--light-blue-color);
+}
+.current-page {
+    border-bottom: 1px #fff solid;
+}
+.blurb {
+    text-align: left;
+    margin: 0 10%;
+}
+.blurb::first-letter {
+    font-size: 2em;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: var(--medium-blue-color);
+}
+#top-image img{
+    margin: 10px 0 0 0;
+    width: 80%;
+    height: auto;
+}
+footer {
+    color: var(--dark-blue-color);
+}
+footer figure {
+    margin: 0;
+}
+code {
+    background-color: var(--light-blue-color);
+    background-color: rgba(151,215,243,0.5);;
+    border-radius: 4px;
+}
+table {
+    border: 1em solid var(--medium-blue-color);
+    width: 100%; 
+    max-width: 20em; 
+    margin-right: auto;
+    margin-left: auto;
+}
+strong {
+    color: var(--medium-blue-color);
+}
+a {
+    color: var(--medium-blue-color);
+}
+/*******************************************************
+The following four classes are from W3School example
+found at:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title
+
+********************************************************/
+
+.overlay-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  box-sizing: border-box;
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay-container:hover .overlay-text {
+  opacity: 1;
+}
+/*******************************************************
+End of W3School example overlay code
+
+********************************************************/
+.tall-img {
+    width: 40%;
+}
+pre code {
+  background-color: var(--light-blue-color);
+  border: 4px solid var(--medium-blue-color);
+  display: block;
+  padding: 20px;
+}
+main img {
+    width: 100%;
+}
+td img {
+    width: auto;
+}
+/*********************************************************
+Adding tooltip on hover
+(https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip)
+*********************************************************/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltipcontent {
+  visibility: hidden;
+  width: 120px;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Align with bottom */
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltiptext {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.tooltip:hover .tooltipcontent {
+  visibility: visible;
+}
+/***************************************************/
+.not-visible {
+    visibility: hidden; /* doesn't appear on page, but accessible in DOM tree */
+}

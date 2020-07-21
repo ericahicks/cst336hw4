@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+        <main> 
+            <figure class="top-image">
+                <img src="img/html5.jpg" alt="HTML5 Logo">
+            </figure>
+            
+            <div class="blurb">
+               <p>HTML stands for Hypertext Markup Language. Hypertext are links and markups are tags that define what the
+               contents between the tags is (e.g. paragraph, heading, table, image). HTML5 is the latest version of HTML. 
+               It allows for some pretty advanced behaviour such as embedded audio or video using <code>&lt;audio&gt;</code>
+               and <code>&lt;vidoeo&gt;</code> or embedding documents using <code>&lt;iframe&gt;</code>. iframes have inherent security risks
+               including hackers hijacking your iframe by changing the url to run malicious plug-ins that can 
+               steal user data or run other malicious code. HTML5 adds the <code>sandbox</code> attribute which can be set to
+               allow only certain types of content to be run in your iframe. 
+               </p>
+               
+               <p>Further resources: 
+                <ul>
+                    <li>To find out more about HTML5 and all the new features, see the  
+                        <span class="tooltip">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">developers guide</a>.
+                        <%- include('partials/tooltip.ejs') %>
+                    </li>
+                    <li>To read more on the risk of using iframes read this article on 
+                        <span class="tooltip">
+                        <a href="https://www.ostraining.com/blog/webdesign/against-using-iframes/">
+                        3 Reasons You Might Not Want to use iframe</a>
+                        <%- include('partials/tooltip.ejs') %>.
+                    </li>
+                </ul>
+                   
+               
+               
+               <p>While you're at it, consider reading 
+               <span class="tooltip">
+               <a href="https://bolajiayodeji.com/the-security-vulnerabilities-of-the-target_blank-attribute-cka3hgvyw01axdjs13r1xgc7m">
+                why you should avoid using target=_blank
+               </a> <%- include('partials/tooltip.ejs') %>
+               in your <code>&lt;a&gt;</code> link tags and how you should always use <code>rel="noreferrer noopener"</Code> 
+               when using the target attribute to avoid hackers exploiting the window.opener API. 
+               </p>
+               <p>As HTML gets more advanced, so do the 
+               secruity issues. Keep your users safe and make sure to learn about the latest security features like 
+               iframe's <code>sandbox</code> and a link's <code>"noreferrer noopener"</code>. 
+               </p>
+               
+           </div>
+               
+           
+<%- include('partials/footer.ejs') %>
